@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ContactListApplication.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    </head>
+<body>
+    <form id="form1" runat="server">
+    <div id="divm">
+        <asp:Image ID="imgTitle" runat="server" ImageUrl="~/titleImage.JPG" />
+        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Height="24px" Font-Bold="True" Font-Size="X-Large" ForeColor="#FFFF66">
+            <StaticMenuStyle BackColor="Gray" />
+            <StaticMenuItemStyle BorderColor="White" BorderWidth="15px" BorderStyle="Solid" />
+            <StaticHoverStyle Font-Bold="true" />
+            <StaticSelectedStyle BackColor="Black" />
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Home.aspx" Text="ABOUT APP" Value="ABOUT APP"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/ViewContact.aspx" Text="VIEW CONTACT" Value="ViewContact"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AddContact.aspx" Text="ADD CONTACT" Value="AddContact"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/ModifyContact.aspx" Text="MODIFY CONTACT" Value="ModifyContact"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                &nbsp;</p>
+        
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
